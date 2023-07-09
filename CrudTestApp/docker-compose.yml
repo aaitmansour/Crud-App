@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  crudapp:
+    image: ${DOCKER_REGISTRY-}crudapp
+    build:
+      context: .
+      dockerfile: CrudApp/Dockerfile
